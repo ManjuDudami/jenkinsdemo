@@ -10,6 +10,6 @@ public class GreetingController {
     // This maps the URL "http://localhost:8080/greet" to this method
     @GetMapping("/greet")
     public String sayHello(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return String.format("Hello, %s! Welcome to your Spring Boot app.", name);
+        return String.format("Hello, %s! Welcome to your Spring Boot app. MD", name);
     }
 }
